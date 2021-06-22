@@ -1,6 +1,6 @@
 # HeroSearchSearchBox
 
-Display a frontpage style search box.
+Displays a frontpage style search box.
 
 ## Example
 
