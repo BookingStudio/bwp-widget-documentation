@@ -34,3 +34,12 @@ These are the standard phrases of the search box.
 | pet | Pluralizable | { "one": "{0} pet", "other": "{0} pets",  } |
 | sort | Options | { "price": "Price", "standard": "Standard",  } |
 | week | Pluralizable | { "one": "{0} week", "other": "{0} weeks",  } |
+
+
+### **Pluralizable**
+
+This a simple javascript object with the properties "zero", "one" and "other". Only "other" is required and the others are only there if there is a pluralization rule for that case. The string "{0}" is a placeholder where the number (quantity, amount and so on) is inserted.
+
+### **Options**
+
+This is a simple javascript object where the keys of the object are the values of options in a select box with the corresponding values.
