@@ -141,7 +141,7 @@ The hosted checkout has a base url of
 |---------------|--------|-------------|---------|
 |```lod```      | number | The property id | ```lod=1```             |
 |```ari```      | date string | The arrival date formatted as MM-DD-YYYY | ```ari=06-25-2021``` |
-|```dur```      | number | The of nights for the stay (i.e. 7 for one week) | ```dur=7``` |
+|```dur```      | number | The number of nights for the stay (i.e. 7 for one week) | ```dur=7``` |
 |```adu```      | number | The number of adults staying                     | ```adu=2``` |
 
 ### **Optional arguments**
