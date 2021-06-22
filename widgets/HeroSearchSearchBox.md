@@ -4,7 +4,7 @@ Display a frontpage style search box.
 
 ## Example
 
-```
+```html
 <div id="mySearchBox" class="bwp-widget"></div>
 <script>
     (function() {

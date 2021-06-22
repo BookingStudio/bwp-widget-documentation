@@ -38,7 +38,7 @@ We provide two javascripts to be included:
 
 ### *Example*
 
-```
+```html
 <script src="https://bwp.bookingstudio.com/[YOUR WIDGETS INSTALLATION ID]/translations.en-GB.js"></script>
 <script src="https://bwp.bookingstudio.com/[YOUR WIDGETS INSTALLATION ID]/widgets.js"></script>
 ```
@@ -55,7 +55,7 @@ To set the culture you need to set a global variable on the ```window``` object 
 
 ### *Example*
 
-```
+```html
 <script>
 window["BookingStudio_culture"] = "en-GB";
 </script>
@@ -70,7 +70,7 @@ While this project is in beta you need to set two additional settings:
 
 ### *Example*
 
-```
+```html
 <script>
     window["BookingStudio_remoteApiHost"] = "https://bwp.bookingstudio.com";
     window["BookingStudio_client"] = "my-installation-name";
@@ -83,7 +83,7 @@ Here is a complete example:
 
 ### *Example*
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,8 +111,16 @@ Here is a complete example:
 
 The current version contains these widgets:
 
+* **HeroSearch** - Hero image with title, sub-title and search box
 * [**HeroSearchSearchBox**](./widgets/HeroSearchSearchBox.md) - Displays a frontpage search box
 * [**LodgingBookingBox**](./widgets/LodgingBookingBox.md) - Displays a booking box on a cottage presentation page
+* **SearchResultList** - Display a grid of search results based on a search with arrival date and duration
+* **SearchBox** - Sidebar search result filtering
+* **LodgingList** - Displays a grid of lodgings based on a set of criteria
+* **LodgingListFilter** - Sidebar lodging list filtering
+* **DiscountLodgingList** - Displays a grid of lodgings which have offers in the coming 60 days. 
+* **CompactDiscountLodgingList** - Displays a row of X number of lodgings with offers in the coming 60 days.
+
 
 <a name="hosted-checkout"></a>
 ## Hosted checkout
@@ -141,7 +149,7 @@ The hosted checkout has a base url of
 | Argument name | Type   | Description | Example | Default value (if omitted) |
 |---------------|--------|-------------|---------|----------------------------|
 |```chi```      | number | The number of children staying  | ```chi=0```  | 0 |
-|```inf```      | number | The number of infants taying    | ```inf=1```  | 0 |
+|```inf```      | number | The number of infants staying   | ```inf=1```  | 0 |
 |```pet```      | number | The number of pets coming along | ```pet=0```  | 0 |
 
 
