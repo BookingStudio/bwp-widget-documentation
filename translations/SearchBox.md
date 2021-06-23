@@ -1,6 +1,6 @@
 # SearchBox translations
 
-These are the standard phrases of the search box.
+These are the standard phrases of the search box widgets.
 
 | Property | Type | Standard phrase  |
 | ---------|------|----------------- |

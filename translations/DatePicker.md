@@ -1,6 +1,6 @@
 # DatePicker translations
 
-These are the standard phrases of the date picker.
+These are the standard phrases of the date picker widget.
 
 | Property | Type | Standard phrase |
 |----------|------|-----------------|
