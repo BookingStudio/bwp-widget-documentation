@@ -24,7 +24,9 @@ Once the widgets are enabled for your BookingStudio account you can include the 
 ### **The widgets stylesheet**
 This stylesheet contains the css used by the widgets.
 
-```
+ *Example*
+
+```html
 <link href="https://bwp.bookingstudio.com/[YOUR WIDGETS INSTALLATION ID]/widgets.css" rel="stylesheet">
 ```
 
@@ -36,7 +38,7 @@ We provide two javascripts to be included:
 
 2. **Widgets** - The widgets bundle with all available widgets. This file is named ```widgets.js```. 
 
-### *Example*
+*Example*
 
 ```html
 <script src="https://bwp.bookingstudio.com/[YOUR WIDGETS INSTALLATION ID]/translations.en-GB.js"></script>
@@ -53,7 +55,7 @@ You need to tell the widgets what culture you want your widgets to follow. The c
 
 To set the culture you need to set a global variable on the ```window``` object like this:
 
-### *Example*
+*Example*
 
 ```html
 <script>
@@ -68,7 +70,7 @@ While this project is in beta you need to set two additional settings:
 * ```BookingStudio_remoteApiHost``` - the baseUrl of the api host used by the widgets
 * ```BookingStudio_client``` - the widgets installation name used by the widgets
 
-### *Example*
+*Example*
 
 ```html
 <script>
@@ -81,7 +83,7 @@ While this project is in beta you need to set two additional settings:
 
 Here is a complete example:
 
-### *Example*
+*Example*
 
 ```html
 <!DOCTYPE html>
@@ -153,7 +155,7 @@ The hosted checkout has a base url of
 |```pet```      | number | The number of pets coming along | ```pet=0```  | 0 |
 
 
-### *Example*
+*Example*
 
 ```
 https://checkout.bookingstudio.com/[YOUR INSTALLATION ID]/?lod=1&ari=06-25-2021&dur=7&adu=2&chi=0&inf=0&pet=0
