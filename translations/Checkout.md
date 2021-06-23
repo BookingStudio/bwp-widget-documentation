@@ -2,6 +2,8 @@
 
 These are the standard phrases of the checkout widget.
 
+**Translation table: ```Checkout```**
+
 | Property | Type | Standard phrase |
 |----------|------|-----------------|
 | address | string | Address |

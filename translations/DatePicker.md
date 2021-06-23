@@ -2,6 +2,8 @@
 
 These are the standard phrases of the date picker widget.
 
+**Translation table: ```DatePicker```**
+
 | Property | Type | Standard phrase |
 |----------|------|-----------------|
 | onlyDaysAfter | string | Only days after {0} can be chosen |

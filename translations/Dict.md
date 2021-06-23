@@ -1,5 +1,9 @@
 # Dict translations
 
+These are standard phrases in general use.
+
+**Translation table: ```Dict```**
+
 | Property | Type | Standard phrase |
 |----------|------|-----------------|
 | bathroom | Pluralizable | { \"one\": \"bathroom\", \"other\": \"bathrooms\",  } |

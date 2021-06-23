@@ -2,6 +2,8 @@
 
 These are the standard phrases for lodging page widgets.
 
+**Translation table: ```LodgingPage```**
+
 | Property | Type | Standard phrase |
 |----------|------|-----------------|
 | book | string | Book |

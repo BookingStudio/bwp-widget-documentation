@@ -2,6 +2,8 @@
 
 These are the standard phrases for the lodging card widget.
 
+**Translation table: ```LodgingCard```**
+
 | Property | Type | Standard phrase |
 |----------|------|-----------------|
 | arrival | string | Arrival |

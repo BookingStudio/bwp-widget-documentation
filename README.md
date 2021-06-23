@@ -2,12 +2,13 @@
 
 BookingStudio Web Platform (BWP) widgets are a set of widgets that can be used to build online booking websites on top of BookingStudio using any type of content management system such as [Wordpress](https://wordpress.org).
 
-## Table of content
+## Table of contents
 
 1. [Prerequisites](#prerequisites)
 1. [Setup](#setup)
 1. [Widgets](#widgets)
 1. [Hosted checkout](#hosted-checkout)
+1. [FAQ](#faq)
 
 <a name="prerequisites"></a>
 ## Prerequisites 
@@ -163,3 +164,64 @@ https://checkout.bookingstudio.com/[YOUR INSTALLATION ID]/?lod=1&ari=06-25-2021&
 
 Please note that that ```LodgingBookingBox``` will automatically append the correct query string given the base checkout url ```https://checkout.bookingstudio.com/[YOUR INSTALLATION ID]/```
 
+<a name="faq"></a>
+## FAQ
+
+### Q: How do I change a standard phrase for a widget?
+
+**A:**
+
+The ```BookingStudio.show()``` function takes an extra argument (after the props argument) with custom translations. 
+You need to provide the name of the translation table and which key or keys you wish to overwrite.
+
+*Example*
+
+```html
+<div id="mySearchBox" class="bwp-widget"></div>
+<script>
+    (function() {
+        const BookingStudio = window["BookingStudio"];
+        if (BookingStudio) {
+            const props = {
+                "searchBox": {
+                    "searchUrl":"/cottages/available",
+                    "locations": [
+                        { "text": "All locations", "value": null},
+                        { "text": ". London", "value": "8"},
+                        { "text": ".. Camden", "value": "3"},
+                        { "text": ".. City", "value":"5" },
+                        { "text": ".. Westminster", "value":"9" },
+                        { "text": ". Berlin", "value":"10" },
+                        { "text": ".. Friedrichshain-Kreuzberg", "value": "11" },
+                        { "text": ".. Mitte", "value":"6" },
+                        { "text": ".. Charlottenburg-Wolmersdorf", "value": "16" }
+                    ],
+                    "durations": [2,3,4,5,6,7,8,9,10,11,12,13,14,21,28],
+                    "maxPersons": 10, 
+                    "maxPets": 1,
+                    "highlightDays":[0,1,5]
+                },
+                "lodgingUrlPattern":"/cottage/{lodging:area}/{lodging:name}/"
+            };
+            BookingStudio.show(
+                document.getElementById("mySearchBox"),
+                "HeroSearchSearchBox",
+                props,
+                {
+                    "SearchBox": {
+                        "searchLodging": "Find by name"
+                    }
+                }
+            );
+        }
+    })();
+</script>
+```
+
+To see which translation tables are used by a widget and which keys can overwritten please see the documentation for the widget.
+
+### Q: Why is there an css class attribute on the ```<div class="bwp-widget>``` element that contains the widget?
+
+**A:**
+
+The widgets styles are built using [normalize.css](https://necolas.github.io/normalize.css/) as a foundation. The css class ```bwp-widget``` provides a basic set of resets to the styles used within it. Without the ```bwp-widget``` class any widget inside might experience inconsistancies across various browsers.

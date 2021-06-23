@@ -2,6 +2,8 @@
 
 These are the standard phrases for the search result list widgets.
 
+**Translation table: ```SearchResultList```**
+
 | Property | Type | Standard phrase |
 |----------|------|-----------------|
 | chooseSorting | string | Choose Sorting |

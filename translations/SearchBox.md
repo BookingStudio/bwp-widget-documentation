@@ -2,6 +2,8 @@
 
 These are the standard phrases of the search box widgets.
 
+**Translation table: ```SearchBox```**
+
 | Property | Type | Standard phrase  |
 | ---------|------|----------------- |
 | adult | Pluralizable | { "one": "{0} Adult", "other": "{0} Adults" } |
