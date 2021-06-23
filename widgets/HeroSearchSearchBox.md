@@ -41,6 +41,11 @@ Displays a frontpage style search box.
 </script>
 ```
 
+## Screenshot
+
+![HeroSearchSearchBox](https://user-images.githubusercontent.com/18358/123077021-f5eaaa80-d419-11eb-9382-3e99d7ba4168.png)
+
+
 ## Settings
 
 | Property                | Type                    | Description                                              |
