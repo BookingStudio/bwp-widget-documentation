@@ -19,7 +19,7 @@ This widget display a booking box for a single property.
                     "availableDurations":[2,3,4,5,6,7,8,9,10,11,12,13,14]
                 },
                 "culture":"en-GB",
-                "nextUrl":"https://checkout.bookingstudio.com/grove-cottages/"
+                "nextUrl":"https://checkout.bookingstudio.com/[YOUR INSTALLATION ID/"
             };
             
             BookingStudio.show(
@@ -31,3 +31,6 @@ This widget display a booking box for a single property.
     })();
 </script>
 ```
+## Screenshot
+
+![LodgingBookingBox](https://user-images.githubusercontent.com/18358/123067415-43aee500-d411-11eb-9738-e2b559a5ff6d.png)
