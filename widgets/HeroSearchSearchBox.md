@@ -26,9 +26,8 @@ Displays a frontpage style search box.
                     ],
                     "durations": [2,3,4,5,6,7,8,9,10,11,12,13,14,21,28],
                     "maxPersons": 10, 
-                    "maxPets": 1,                     
-                    "culture":"en-GB",
-                    "highlightDays":[5,6]
+                    "maxPets": 1,
+                    "highlightDays":[0,1,5]
                 },
                 "lodgingUrlPattern":"/cottage/{lodging:area}/{lodging:name}/"
             };
@@ -58,8 +57,20 @@ Displays a frontpage style search box.
 |```durations```      | number[]                | Array of number of nights for the durations picker.      |
 |```maxPersons```     | number                  | The max. no. of people allowed for the people picker.    |
 |```maxPets```        | number                  | The max. no. of pets allowed for the pet picker.         |
-|```culture```        | string                  | Array of number of nights for the durations picker.      |
-|```highlightDays```  | number[] (optional)     | Array of number of nights for the durations picker.      |
+|```highlightDays```  | number[] (optional)     | Array of weekdays to highlight. Sunday is 0, Monday is 1 and so on up to Saturday being 6 |
+
+### **SelectItem**
+
+This is a simple javascript object with two properties ```text``` for the display value and ```value``` for the selected value.
+
+*Example*
+```javascript
+// SelectItem object
+let item = {
+    "text": "The display value",
+    "value": "42"
+};
+```
 
 ## Translations
 
