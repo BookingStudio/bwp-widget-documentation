@@ -11,7 +11,7 @@ Shows the lodging booking box for the property with id 12, allowing max 10 peopl
 <script>
     (function() {
         const BookingStudio = window["BookingStudio"];
-        if (BookingStudio) {                			
+        if (BookingStudio) {                            			
             const props = {
                 "searchBoxSettings": {
                     "availableDurations":[2,3,4,5,6,7,8,9,10,11,12,13,14],
@@ -21,6 +21,11 @@ Shows the lodging booking box for the property with id 12, allowing max 10 peopl
                 "nextUrl":"https://checkout.bookingstudio.com/[YOUR INSTALLATION ID/",
                 "presets": {
                     "lodgingId": 12
+                },
+                "defaultValues": {
+                    "arrival": "06-30-2021",
+                    "duration": 7,
+                    "adults": 2
                 }
             };
             
@@ -41,6 +46,7 @@ Shows the lodging booking box for the property with id 12, allowing max 10 peopl
 
 | Property                | Type                    | Description                                              |
 |-------------------------|-------------------------|----------------------------------------------------------|
+| ```defaultValues``` | SearchContextProps | Set the initial values for the lodging booking box such as arrival date, duration and number of people |
 | ```nextUrl``` | string | The url for the checkout page |
 | ```presets``` | SearchContextProps | Set the context for the lodging booking box such as which property to show the box for |
 | ```searchBoxSettings``` | SearchBoxSettings | The settings used by the search engine for the booking box |
@@ -59,7 +65,13 @@ All properties are optional.
 
 | Property            | Type                    | Description                                              |
 |---------------------|-------------------------|----------------------------------------------------------|
+| ```adults```        | number                  | The initial number of adults selected |
+| ```arrival```       | string                  | The initial arrival date for the box in the format MM-dd-yyyy |
+| ```children```      | number                  | The initial number of children selected |
+| ```duration```      | number                  | The initial length of stay selected |
+| ```infants```       | number                  | The initial number of infants selected |
 | ```lodgingId```     | number                  | Id of the property to show the booking box for           |
+| ```pets```          | number                  | The initial number of pets selected |
 
 ## Translations
 
