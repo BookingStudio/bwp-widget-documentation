@@ -4,6 +4,8 @@ This widget display a booking box for a single property.
 
 ## Example
 
+Shows the lodging booking box for the property with id 12, allowing max 10 people and max 2 pets.
+
 ```html
 <div id="myBookingBox"></div>
 <script>
@@ -16,7 +18,10 @@ This widget display a booking box for a single property.
                     "maxPeople":10,
                     "maxPets":2
                 },
-                "nextUrl":"https://checkout.bookingstudio.com/[YOUR INSTALLATION ID/"
+                "nextUrl":"https://checkout.bookingstudio.com/[YOUR INSTALLATION ID/",
+                "presets": {
+                    "lodgingId": 12
+                }
             };
             
             BookingStudio.show(
@@ -36,16 +41,25 @@ This widget display a booking box for a single property.
 
 | Property                | Type                    | Description                                              |
 |-------------------------|-------------------------|----------------------------------------------------------|
-| ```searchBoxSettings``` | SearchBoxSettings | The settings used by the search engine for the booking box |
 | ```nextUrl``` | string | The url for the checkout page |
+| ```presets``` | SearchContextProps | Set the context for the lodging booking box such as which property to show the box for |
+| ```searchBoxSettings``` | SearchBoxSettings | The settings used by the search engine for the booking box |
 
 ### **SearchBoxSettings**
 
 | Property            | Type                    | Description                                              |
 |---------------------|-------------------------|----------------------------------------------------------|
 |```availableDurations```      | number[]                | Array of number of nights for the durations picker.      |
-|```maxPersons```     | number                  | The max. no. of people allowed for the people picker.    |
+|```maxPeople```      | number                  | The max. no. of people allowed for the people picker.    |
 |```maxPets```        | number                  | The max. no. of pets allowed for the pet picker.         |
+
+### **SearchContextProps**
+
+All properties are optional.
+
+| Property            | Type                    | Description                                              |
+|---------------------|-------------------------|----------------------------------------------------------|
+| ```lodgingId```     | number                  | Id of the property to show the booking box for           |
 
 ## Translations
 
