@@ -12,3 +12,10 @@ These are the standard phrases of the date picker widget.
 | onlyDaysInPast | string | Only days in the past can be chosen |
 | onlyTodayAndFuture | string | Only today and days in the future can be chosen |
 | onlyTodayAndPast | string | Only today and days in the past can be chosen |
+| mon | string | Mon |
+| tue | string | Tue |
+| wed | string | Wed |
+| thu | string | Thu |
+| fri | string | Fri |
+| sat | string | Sat |
+| sun | string | Sun |
