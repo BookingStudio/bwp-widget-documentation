@@ -60,7 +60,7 @@ Displays a frontpage style search box.
 |```searchUrl```      | string                  | The url of the search result page                        |
 |```locations```      | SelectItem[]            | Array of locations for the locations picker.             |
 |```durations```      | number[]                | Array of number of nights for the durations picker.      |
-|```maxPersons```     | number                  | The max. no. of people allowed for the people picker.    |
+|```maxPeople```     | number                  | The max. no. of people allowed for the people picker.    |
 |```maxPets```        | number                  | The max. no. of pets allowed for the pet picker.         |
 |```highlightDays```  | number[] (optional)     | Array of weekdays to highlight. Sunday is 0, Monday is 1 and so on up to Saturday being 6 |
 
