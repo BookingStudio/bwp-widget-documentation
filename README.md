@@ -118,7 +118,7 @@ The current version contains these widgets:
 * [**HeroSearchSearchBox**](./widgets/HeroSearchSearchBox.md) - Displays a frontpage search box
 * [**LodgingBookingBox**](./widgets/LodgingBookingBox.md) - Displays a booking box on a cottage presentation page
 * [**SearchResultList**](./widgets/SearchResultList.md) - Display a grid of search results based on a search with arrival date and duration
-* **SearchBox** - Sidebar search result filtering
+* [**SearchBox**](./widgets/SearchBox.md) - Sidebar search result filtering
 * **LodgingList** - Displays a grid of lodgings based on a set of criteria
 * **LodgingListFilter** - Sidebar lodging list filtering
 * **DiscountLodgingList** - Displays a grid of lodgings which have offers in the coming 60 days. 
