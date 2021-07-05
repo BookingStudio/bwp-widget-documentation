@@ -44,7 +44,7 @@ Displays a simple search box that allows the user to change their current search
 
 ## Screenshot
 
-
+![SearchBox](https://user-images.githubusercontent.com/18358/124519958-40413380-ddeb-11eb-9e3c-9a5835a08d5f.png)
 
 ## Settings
 
