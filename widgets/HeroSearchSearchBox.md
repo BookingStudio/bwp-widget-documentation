@@ -29,7 +29,10 @@ Displays a frontpage style search box.
                     "maxPets": 1,
                     "highlightDays":[0,1,5]
                 },
-                "lodgingUrlPattern":"/cottage/{lodging:area}/{lodging:name}/"
+                "lodgingUrlPattern":"/cottage/{lodging:area}/{lodging:name}/",
+                "defaultValues": {
+                    "duration": 2
+                }
             };
             BookingStudio.show(
                 document.getElementById("mySearchBox"),
@@ -48,10 +51,11 @@ Displays a frontpage style search box.
 
 ## Settings
 
-| Property                | Type                    | Description                                              |
-|-------------------------|-------------------------|----------------------------------------------------------|
-|```searchBox```          | SearchBoxProps          | Object with settings for the search box.                 |
-|```lodgingUrlPattern```  | string (optional)       | The url pattern for linking directly to property.        |
+| Property                | Type                             | Description                                              |
+|-------------------------|----------------------------------|----------------------------------------------------------|
+|```searchBox```          | SearchBoxProps                   | Object with settings for the search box.                 |
+|```lodgingUrlPattern```  | string (optional)                | The url pattern for linking directly to property.        |
+| ```defaultValues```     | SearchContextProps (optional)    | Set the initial values for the search box such as arrival date, duration and number of people |
 
 ### **SearchBoxProps**
 
@@ -63,6 +67,19 @@ Displays a frontpage style search box.
 |```maxPeople```     | number                  | The max. no. of people allowed for the people picker.    |
 |```maxPets```        | number                  | The max. no. of pets allowed for the pet picker.         |
 |```highlightDays```  | number[] (optional)     | Array of weekdays to highlight. Sunday is 0, Monday is 1 and so on up to Saturday being 6 |
+
+### **SearchContextProps**
+
+All properties are optional.
+
+| Property            | Type                    | Description                                              |
+|---------------------|-------------------------|----------------------------------------------------------|
+| ```adults```        | number                  | The initial number of adults selected |
+| ```arrival```       | string                  | The initial arrival date for the box in the format MM-dd-yyyy |
+| ```children```      | number                  | The initial number of children selected |
+| ```duration```      | number                  | The initial length of stay selected |
+| ```infants```       | number                  | The initial number of infants selected |
+| ```pets```          | number                  | The initial number of pets selected |
 
 ### **SelectItem**
 
