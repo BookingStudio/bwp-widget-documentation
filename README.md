@@ -123,6 +123,7 @@ The current version contains these widgets:
 * **LodgingListFilter** - Sidebar lodging list filtering
 * **DiscountLodgingList** - Displays a grid of lodgings which have offers in the coming 60 days. 
 * **CompactDiscountLodgingList** - Displays a row of X number of lodgings with offers in the coming 60 days.
+* [**MultiLodgingCalendar**](./widgets/MultiLodgingCalendar.md) - Displays a list of calendars, one for each lodging, with the availability shown for each lodging and the ability to select stays for available days.
 
 
 <a name="hosted-checkout"></a>
