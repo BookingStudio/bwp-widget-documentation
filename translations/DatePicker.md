@@ -19,3 +19,15 @@ These are the standard phrases of the date picker widget.
 | fri | string | Fri |
 | sat | string | Sat |
 | sun | string | Sun |
+| january | string | January |
+| february | string | February |
+| march | string | March |
+| april | string | April |
+| may | string | May |
+| june | string | June |
+| july | string | Juli |
+| august | string | August |
+| september | string | September |
+| october | string | October |
+| november | string | November |
+| december | string | December |
