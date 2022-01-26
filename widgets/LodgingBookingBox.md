@@ -26,7 +26,8 @@ Shows the lodging booking box for the property with id 12, allowing max 10 peopl
                     "arrival": "06-30-2021",
                     "duration": 7,
                     "adults": 2
-                }
+                },
+                "showInfants": false
             };
             
             BookingStudio.show(
@@ -50,6 +51,7 @@ Shows the lodging booking box for the property with id 12, allowing max 10 peopl
 | ```nextUrl``` | string | The url for the checkout page |
 | ```presets``` | SearchContextProps | Set the context for the lodging booking box such as which property to show the box for |
 | ```searchBoxSettings``` | SearchBoxSettings | The settings used by the search engine for the booking box |
+| ```showInfants``` | boolean | If set to true, the guest can select number of infants in the people selector |
 
 ### **SearchBoxSettings**
 
