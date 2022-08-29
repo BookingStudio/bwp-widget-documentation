@@ -27,7 +27,9 @@ Shows the lodging booking box for the property with id 12, allowing max 10 peopl
                     "duration": 7,
                     "adults": 2
                 },
-                "showInfants": false
+                "showInfants": false,
+                "showTwoMonthsInDatePicker": true,
+                "showDurationAboveDatePicker": false
             };
             
             BookingStudio.show(
@@ -52,6 +54,8 @@ Shows the lodging booking box for the property with id 12, allowing max 10 peopl
 | ```presets``` | SearchContextProps | Set the context for the lodging booking box such as which property to show the box for |
 | ```searchBoxSettings``` | SearchBoxSettings | The settings used by the search engine for the booking box |
 | ```showInfants``` | boolean | If set to true, the guest can select number of infants in the people selector |
+| ```showTwoMonthsInDatePicker``` | boolean | If set to true, the date picker will display two months when visible. Notice it always only shows one month on mobile. |
+| ```showDurationAboveDatePicker``` | boolean | If set to true, the duration picker will be displayed above the date picker instead of below. |
 
 ### **SearchBoxSettings**
 
